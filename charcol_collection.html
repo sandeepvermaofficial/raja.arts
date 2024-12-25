@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+       <!-- Navbar -->
+   <nav class="p-3 flex bg-white justify-between items-center">
+    <i>
+        <a href="./index.html" class="text-lg font-medium">RAJA ARTS</a>
+    </i>
+
+    <div id="nav-menu" class="hidden md:flex gap-12">
+    <a href="#" class="font-medium hover:text-blue-600">Art</a>
+    <a href="#" class="font-medium hover:text-blue-600">Collection</a>
+    <a href="#" class="font-medium hover:text-blue-600">Pricing</a>
+    <a href="./contact.html" class="font-medium hover:text-blue-600">Contact Us</a>
+    <a href="./about.html" class="font-medium hover:text-blue-600">About Us</a>
+
+    </div>
+
+    <button class="hidden md:flex gap-2 items-center border px-4 py-1 border-gray-300 rounded-lg">
+        <i class="fa-sharp-duotone fa-solid fa-snowflake"></i>
+        <span>product</span>
+    </button>
+
+    <button class="p-2 md:hidden" onclick="handleMenu()">
+        <i class="fa-solid fa-bars text-red-900"></i>
+    </button>
+
+    <div id="nav-dialog" class="hidden fixed z-10 md:hidden bg-white inset-0 p-3">
+       <div id="nav-bar" class="flex justify-between">
+        <i>
+            <span class="text-lg font-medium">RAJA ARTS</span>
+        </i>
+        <button class="p-2 md:hidden" onclick="handleMenu()">
+            <i class="fa-solid fa-xmark text-red-900"></i>
+        </button>
+       </div>
+
+       <div>
+        <a href="#" class="font-medium m-3 p-3 hover:bg-green-200 block rounded-lg">Art</a>
+        <a href="#" class="font-medium m-3 p-3 hover:bg-green-200 block rounded-lg">Collection</a>
+        <a href="#" class="font-medium m-3 p-3 hover:bg-green-200 block rounded-lg">Pricing</a>
+        <a href="#" class="font-medium m-3 p-3 hover:bg-green-200 block rounded-lg">Contact Us</a>
+        <a href="./about.html" class="font-medium m-3 p-3 hover:bg-green-200 block rounded-lg">About US</a>
+       </div>
+       <div class="h-[1px] bg-gray-400"></div>
+       <button class="w-full mt-5 hover:bg-green-200 flex gap-2 items-center border px-4 py-2 border-gray-300 rounded-lg">
+        <i class="fa-sharp-duotone fa-solid fa-snowflake"></i>
+        <span>product</span>
+    </button>
+    </div>
+   </nav>
+
+
+   <div class="bg-gray-300">
+    <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+      <h2 class="text-2xl font-bold tracking-tight text-gray-900 text-center">OIL PAINTING</h2>
+  
+      <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4  xl:gap-x-8">
+        <div class="group relative">
+          <img src="./charcol-pic.jpg" alt="Front of men&#039;s Basic Tee in black." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-lg text-black">
+                <a href="#">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  Basic Tee
+                </a>
+              </h3>
+              <p class="mt-1 text-sm text-black font-semibold">Small Size</p>
+            </div>
+            <p class="text-sm font-medium text-gray-900">₹1899</p>
+          </div>
+        </div>
+  
+        <!-- More products... -->
+        <div class="group relative">
+          <img src="https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="#">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  Basic Tee
+                </a>
+              </h3>
+              <p class="mt-1 text-sm text-gray-500">Black</p>
+            </div>
+            <p class="text-sm font-medium text-gray-900">$35</p>
+          </div>
+        </div>
+        <div class="group relative">
+          <img src="https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="#">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  Basic Tee
+                </a>
+              </h3>
+              <p class="mt-1 text-sm text-gray-500">Black</p>
+            </div>
+            <p class="text-sm font-medium text-gray-900">$35</p>
+          </div>
+        </div>
+        <div class="group relative">
+          <img src="https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
+          <div class="mt-4 flex justify-between">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="#">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                  Basic Tee
+                </a>
+              </h3>
+              <p class="mt-1 text-sm text-gray-500">Black</p>
+            </div>
+            <p class="text-sm font-medium text-gray-900">$35</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+    <footer>
+        <footer class="bg-gray-800 text-white py-10 px-5">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+              <!-- About Section -->
+              <div>
+                <h3 class="text-xl font-semibold mb-4">About Us</h3>
+                <p class="text-gray-400">
+                  Discover a curated collection of fine paintings, featuring works from classic to contemporary artists. Immerse yourself in the beauty of art.
+                </p>
+              </div>
+          
+              <!-- Navigation Links -->
+              <div>
+                <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                  <li><a href="#" class="text-gray-400 hover:text-gray-200">Home</a></li>
+                  <li><a href="#" class="text-gray-400 hover:text-gray-200">Gallery</a></li>
+                  <li><a href="#" class="text-gray-400 hover:text-gray-200">Exhibitions</a></li>
+                  <li><a href="#" class="text-gray-400 hover:text-gray-200">Contact</a></li>
+                </ul>
+              </div>
+          
+              <!-- Contact Information -->
+              <div>
+                <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                <p class="text-gray-400">Email: sandeepvermaofficial07.com</p>
+                <p class="text-gray-400">Phone: +91 6386368896, +91 8604149788</p>
+                <p class="text-gray-400">Address: Gaziabad Uttar Pradesh, India</p>
+              </div>
+            </div>
+          
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center">
+              <p class="text-gray-500 text-sm">
+                &copy; 2024 Painting Collection. All rights reserved.
+              </p>
+              <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M22.46 6c-.77 3.5-3.1 6.2-6.06 7.4 1.27 1.46 1.78 3.4 1.53 5.3-2.28.15-4.56-.9-6.18-2.45-1.62-1.54-2.77-3.6-2.98-5.8C6.33 10.2 4.5 8.3 4 6c1.44-.63 2.98-.5 4.38-.15.93-.45 2.06-.63 3.1-.53 1.03-.05 2.16.17 3.1.52 1.4-.35 2.93-.48 4.38.15-.47 2.1-2.27 4-4.5 5.1z"/>
+                  </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-1-13h2v6h-2zm1 8.06c-.71 0-1.29-.57-1.29-1.29 0-.71.57-1.29 1.29-1.29s1.29.57 1.29 1.29c0 .71-.57 1.29-1.29 1.29z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </footer>
+          
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
